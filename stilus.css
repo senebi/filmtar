@@ -1,0 +1,293 @@
+#ujfilmadatlap table, #gyorskereses table{
+	position: relative;
+}
+legend{
+	border-radius: 5px 5px 0 0;
+	border-left: 1px solid #979797;
+	border-top: 1px solid #979797;
+	border-right: 1px solid #979797;
+}
+div#filmadatmod fieldset, div#filmadatmod fieldset legend{
+	background-color: #FFFF99;
+}
+div#ujfilmadatlap fieldset, div#ujfilmadatlap fieldset legend{
+	background-color: #CCFF66;
+}
+div#gyorskereses fieldset, div#gyorskereses fieldset legend{
+	background-color: #AADDFF;
+}
+div#szereplokezeles fieldset, div#szereplokezeles fieldset legend{
+	background-color: #eeeeee;
+}
+div.lap{
+	float: left;
+}
+div#szereplokezeles{
+	background-color: #eeeeee;
+	margin-top: 0.5em;
+	padding-left: 1em;
+	padding-top: 0;
+	width: 50%;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin-bottom: 1em;
+}
+div#szereplokezeles h3{
+	margin-top: 0;
+}
+#szereplo_lista{
+	margin-top: 0.5em;
+	height: 15em;
+	overflow: auto;
+}
+#szereplo_lista ul{
+	margin: 0;
+	padding: 0;
+	columns: 3;
+	-webkit-columns: 3;
+	-moz-column-count: 3;
+}
+#szereplo_lista ul li{
+	list-style-type: none;
+}
+#szereplo_lista ul li:hover{
+	background-color: #555555;
+	color: white;
+	cursor: pointer
+}
+#mibenszerepel{
+	position: absolute;
+	display: none;
+	padding: 2px;
+	left: 2em;
+	top: 2em;
+	border: 1px solid black;
+	border-radius: 5px;
+	background-color: white;
+	width: 50%;
+}
+#mibenszerepel span#bezarlink{
+	display: block;
+	margin-top: 0;
+	margin-right: 5px;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+	color: #999;
+	transition: color 0.5s ease
+}
+#mibenszerepel span#bezarlink:hover{
+	cursor: pointer;
+	color: black
+}
+.ujsz_megnyit{
+	margin-left: 0.5rem;
+}
+#szereplo_szures{
+	float: left;
+	vertical-align: top;
+}
+form#ujsz_beviteli{
+	display: none;
+	float: right;
+	margin-right: 1rem;
+	vertical-align: top;
+}
+button img{
+	vertical-align: middle;
+}
+/*#filmadatmod fieldset table tr td{
+	border: 1px solid black;
+}*/
+div.siker{
+	background: left top url("img/pipa.png") no-repeat;
+	border: 2px solid green;
+	padding-left: 18px;
+}
+div.hiba{
+	background: left top url("img/x.png") no-repeat;
+	border: 2px solid red;
+	padding-left: 18px;
+}
+div.figyelem{
+	background: left top url("img/warning.png") no-repeat;
+	border: 2px solid #FFCC33;
+	padding-left: 18px;
+}
+#ujszereplok div, #mujszereplok div, div.meglevoszereplo{
+	height: 30px;
+	line-height: 30px;
+	padding-left: 10px;
+}
+#ujszereplok div img, #mujszereplok div img{
+	cursor: pointer;
+}
+#ujszereplok div *, #mujszereplok div *{
+	vertical-align: middle;
+}
+/*button#torles img{
+	vertical-align: middle;
+}*/
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+div#ragados{
+	position: fixed;
+	top: 0;
+	line-height: 1em;
+	margin-top: 0;
+	z-index: 10;
+	display: none;
+}
+div#ragados table{
+	border-top: 0;
+	margin-top: 0;
+	border-collapse: collapse;
+}
+div#ragados table tr th{
+	border-bottom: 2px solid white;
+	border-left: 2px solid white;
+}
+table.lista{
+	/*border-collapse: collapse;*/
+}
+table.lista tr td{
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+.lista .omufaj{
+	text-align: center;
+}
+.lista th{
+	color: white;
+	background-color: #000088;
+}
+.lista tr.paratlan{
+	background-color: #E5E5E5;
+}
+.lista tr.paros{
+	background-color: #D5D5D5;
+}
+.lista tr.inaktiv{
+	background-color: #999;
+}
+.lista tr:hover{
+	background-color: #CCFFCC;
+}
+span.mod{
+	cursor: pointer;
+	color: blue;
+}
+span.mod:hover{
+	text-decoration: underline;
+}
+.gykdoboz{
+	background-color: white;
+	display: none;
+	position: absolute;
+	border: 1px solid #CCC;
+	border-top: 0;
+	z-index: 2;
+	height: 180px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+tr.gyorstalalat:hover{
+	background-color: #99EEFF;
+	cursor: default;
+}
+
+#tablahely{
+	height: 350px;
+	overflow: auto;
+	white-space: nowrap;
+	display: inline-block;
+}
+img.ikon{
+	cursor: pointer;
+}
+/* ----------- Galaxy S6 ----------- */
+
+/* Portrait and Landscape */
+@media screen and (max-width: 360px) 
+{
+	img.ceruza{
+		width: 2rem;
+		height: 2rem;
+	}
+	.okat, .otipus, .oaktivitas{
+		display: none;
+	}
+}
+@media screen and (max-width: 800px){
+	div#szereplokezeles{
+		width: 95%;
+		padding-right: 1rem;
+	}
+}
+td#tartalom4{
+	min-width: 80px;
+}
+#folso, #also{
+	width: 100%;
+}
+#also{
+	height: 350px;/* 370+68 (process margóval)+40 (találat szöveg+fejléc) */
+}
+img.porgettyu{
+	margin-top: 20px;
+	margin-left: 150px;
+}
+#filmadatmod fieldset .porgettyu{
+	text-align: center;
+	vertical-align: middle;
+}
+.meglevoszereplo .athuzott{
+	text-decoration: line-through
+}
+#rendszeruzenet{
+	float: left;
+	/*padding-right: 20px;
+	border: 1px solid black;*/
+}
+#rendszeruzenet div{
+	/*float: left;*/
+	padding-right: 3px;
+}
+.ui-effects-wrapper{
+	/*border: 2px solid green;*/
+}
+#et_szer_kep{
+	float: left;
+}
+#easyTooltip{
+	padding:5px 10px;
+	margin-left: 5px;
+	border:1px solid #195fa4;
+	background:#195fa4 url(easytooltip/bg.gif) repeat-x;
+	color:#fff;
+	/*float: left;*/
+}
+#easyTooltip2{
+	float: left;
+	padding:5px 10px;
+	border:1px solid #5e5e5e;
+	background:#5e5e5e url(easytooltip/bg2.gif) repeat-x;
+	color:#fff;
+	/*width:250px;*/
+}
+#keptarto{
+	/*float: left;*/
+	/*border: 1px solid black;*/
+	margin-left: 5px;
+}
+legend{
+	font-size: larger;
+	font-weight: bold;
+}
+#easyTooltip2 h4, #easyTooltip2 p, #easyTooltip h4, #easyTooltip p{
+	margin:.25em 0;
+}

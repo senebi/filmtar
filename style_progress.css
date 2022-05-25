@@ -1,0 +1,40 @@
+/*iframe*/
+#upload_frame_uj, #upload_frame_mod {
+	border:0;
+	/*height:200px;*/
+	width:360px;
+	/*float: left;*/
+	text-align: left;
+	display: none;
+}
+
+#progress_container {
+	width: 300px; 
+	height: 20px; 
+	border: 1px solid #CCCCCC; 
+	background-color:#EBEBEB;
+	margin:5px 0px -15px 0px;
+}
+
+#folyamat_doboz_uj, #folyamat_doboz_mod{
+	width: 300px;
+	text-align: center;
+}
+
+#progress_bar {
+	position: relative; 
+	height: 20px; 
+	background-color: #F3631C; 
+	width: 0%; 
+	z-index:10; 
+}
+
+#progress_completed {
+	font-size:16px; 
+	z-index:40; 
+	line-height:20px;
+	width: 100%;
+	text-align: center;
+	/*padding-left:4px;*/
+	color:#F3631C;
+}
